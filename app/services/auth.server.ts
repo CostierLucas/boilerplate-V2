@@ -17,9 +17,6 @@ authenticator.use(
       secret: process.env.ENCRYPTION_SECRET!,
       magicLinkPath: "/magic-link",
       sendTOTP: async ({ email, code, magicLink }) => {
-        if (process.env.NODE_ENV === "development") {
-          console.log("[Dev-Only] TOTP Code:", code);
-        }
         await sendAuthEmail({ email, code, magicLink });
       },
     },
