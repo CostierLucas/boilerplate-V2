@@ -15,4 +15,9 @@ export default defineConfig({
       projects: ["tsconfig.json"],
     }),
   ],
+  server: {
+    host: true,
+    port: 5173,
+    strictPort: true,
+  },
 });

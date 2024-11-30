@@ -1,40 +1,53 @@
-# Welcome to Remix!
+# Remix Boilerplate
 
-- 📖 [Remix docs](https://remix.run/docs)
+A production-ready Remix starter template with TypeScript, Tailwind CSS. Get your Remix projects up and running quickly with best practices built-in.
 
-## Development
+## Features
 
-Run the dev server:
+- ⚡️ Remix + TypeScript + Vite
+- 🎨 Tailwind CSS configured
+- 🐳 Responsive layout ready
+- 🔒 Basic auth setup
+- 🚀 Production-ready configuration
 
-```shellscript
+## Quick Start
+
+```sh
+# Development
 npm run dev
-```
 
-## Deployment
-
-First, build your app for production:
-
-```sh
+# Production build
 npm run build
-```
 
-Then run the app in production mode:
-
-```sh
+# Start production server
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
+## Project Structure
 
-### DIY
+```
+├── app/
+│   ├── routes/            # Route components
+│   ├── sections/          # Reusable section components
+│   ├── services/          # Business logic and services
+│   └── tailwind.css       # Global styles
+└── public/                # Static assets
+```
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+## Tech Stack
 
-Make sure to deploy the output of `npm run build`
+- [Remix](https://remix.run/docs)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-- `build/server`
-- `build/client`
+## Note
 
-## Styling
+The following files are only used for local development and can be safely removed if not needed:
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+- `docker-compose.yml`
+- `Dockerfile`
+- `dockerize.sh`
+
+## License
+
+MIT
